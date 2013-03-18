@@ -1,7 +1,7 @@
 #!/usr/bin/perl 
 use POSIX qw/strftime/;
-$home="/home/ubuntu/scripts/doc_env";
-$html="/usr/local/tomcat/";
+$home=".";
+$html="./resource";
 $delimitor = "|";
 #####Time Logic
   # usage: days_ago n
@@ -26,5 +26,6 @@ $AZ_Date = strftime('%d-%b-%Y %H:%M',(localtime($arizonaTime)));
 $jdk_env = "$html/jdk_env.cvs";
 #`$home/env_jdk_query.pl > $jdk_env`;
 `$home/jdkquery.pl`;
-`cp /$home/jdkdoc.txt  $html/jdk_envx.cvs; `;
+print "\ncp $home/jdkdoc.txt  $html/jdk_env.cvs";
+`cp $home/jdkdoc.txt  $html/jdk_env.cvs`;
 
