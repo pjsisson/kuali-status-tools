@@ -137,9 +137,9 @@ Java(TM) SE Runtime Environment (build 1.6.0_34-b04)
 Java HotSpot(TM) 64-Bit Server VM (build 20.9-b04, mixed mode)
 ","/usr/java/jdk6/bin/java
 "
- env1.ks.kuali.org,"ssh: Could not resolve hostname env1.ks.kuali.org: nodename nor servname provided, or not known
-","ssh: Could not resolve hostname env1.ks.kuali.org: nodename nor servname provided, or not known
-","ssh: Could not resolve hostname env1.ks.kuali.org: nodename nor servname provided, or not known
+ env1.ks.kuali.org,"ssh: Could not resolve hostname env1.ks.kuali.org: Name or service not known
+","ssh: Could not resolve hostname env1.ks.kuali.org: Name or service not known
+","ssh: Could not resolve hostname env1.ks.kuali.org: Name or service not known
 "
  env2.ks.kuali.org,"total 4
 lrwxrwxrwx 1 root root   16 Sep 25  2011 default -> /usr/java/latest
@@ -151,13 +151,13 @@ Java(TM) SE Runtime Environment (build 1.6.0_27-b07)
 Java HotSpot(TM) Client VM (build 20.2-b06, mixed mode, sharing)
 ","/usr/java/default/bin/java
 "
- env3.ks.kuali.org,"ssh: Could not resolve hostname env3.ks.kuali.org: nodename nor servname provided, or not known
-","ssh: Could not resolve hostname env3.ks.kuali.org: nodename nor servname provided, or not known
-","ssh: Could not resolve hostname env3.ks.kuali.org: nodename nor servname provided, or not known
+ env3.ks.kuali.org,"ssh: Could not resolve hostname env3.ks.kuali.org: Name or service not known
+","ssh: Could not resolve hostname env3.ks.kuali.org: Name or service not known
+","ssh: Could not resolve hostname env3.ks.kuali.org: Name or service not known
 "
- env4.ks.kuali.org,"ssh: Could not resolve hostname env4.ks.kuali.org: nodename nor servname provided, or not known
-","ssh: Could not resolve hostname env4.ks.kuali.org: nodename nor servname provided, or not known
-","ssh: Could not resolve hostname env4.ks.kuali.org: nodename nor servname provided, or not known
+ env4.ks.kuali.org,"ssh: Could not resolve hostname env4.ks.kuali.org: Name or service not known
+","ssh: Could not resolve hostname env4.ks.kuali.org: Name or service not known
+","ssh: Could not resolve hostname env4.ks.kuali.org: Name or service not known
 "
  staging.ks.kuali.org,"total 4
 lrwxrwxrwx 1 root root   16 Sep 25  2011 default -> /usr/java/latest
@@ -169,17 +169,17 @@ Java(TM) SE Runtime Environment (build 1.6.0_27-b07)
 Java HotSpot(TM) Client VM (build 20.2-b06, mixed mode, sharing)
 ","/usr/java/default/bin/java
 "
- env6.ks.kuali.org,"ssh: Could not resolve hostname env6.ks.kuali.org: nodename nor servname provided, or not known
-","ssh: Could not resolve hostname env6.ks.kuali.org: nodename nor servname provided, or not known
-","ssh: Could not resolve hostname env6.ks.kuali.org: nodename nor servname provided, or not known
+ env6.ks.kuali.org,"ssh: Could not resolve hostname env6.ks.kuali.org: Name or service not known
+","ssh: Could not resolve hostname env6.ks.kuali.org: Name or service not known
+","ssh: Could not resolve hostname env6.ks.kuali.org: Name or service not known
 "
- env7.ks.kuali.org,"ssh: Could not resolve hostname env7.ks.kuali.org: nodename nor servname provided, or not known
-","ssh: Could not resolve hostname env7.ks.kuali.org: nodename nor servname provided, or not known
-","ssh: Could not resolve hostname env7.ks.kuali.org: nodename nor servname provided, or not known
+ env7.ks.kuali.org,"ssh: Could not resolve hostname env7.ks.kuali.org: Name or service not known
+","ssh: Could not resolve hostname env7.ks.kuali.org: Name or service not known
+","ssh: Could not resolve hostname env7.ks.kuali.org: Name or service not known
 "
- env8.ks.kuali.org,"ssh: Could not resolve hostname env8.ks.kuali.org: nodename nor servname provided, or not known
-","ssh: Could not resolve hostname env8.ks.kuali.org: nodename nor servname provided, or not known
-","ssh: Could not resolve hostname env8.ks.kuali.org: nodename nor servname provided, or not known
+ env8.ks.kuali.org,"ssh: Could not resolve hostname env8.ks.kuali.org: Name or service not known
+","ssh: Could not resolve hostname env8.ks.kuali.org: Name or service not known
+","ssh: Could not resolve hostname env8.ks.kuali.org: Name or service not known
 "
  demo.ks.kuali.org,"total 16
 drwxr-xr-x 8 root root 4096 Sep 11  2012 jdk1.6.0-u34
@@ -194,9 +194,9 @@ Java(TM) SE Runtime Environment (build 1.6.0_35-b10)
 Java HotSpot(TM) 64-Bit Server VM (build 20.10-b01, mixed mode)
 ","/usr/java/jdk6/bin/java
 "
- env10.ks.kuali.org,"ssh: Could not resolve hostname env10.ks.kuali.org: nodename nor servname provided, or not known
-","ssh: Could not resolve hostname env10.ks.kuali.org: nodename nor servname provided, or not known
-","ssh: Could not resolve hostname env10.ks.kuali.org: nodename nor servname provided, or not known
+ env10.ks.kuali.org,"ssh: Could not resolve hostname env10.ks.kuali.org: Name or service not known
+","ssh: Could not resolve hostname env10.ks.kuali.org: Name or service not known
+","ssh: Could not resolve hostname env10.ks.kuali.org: Name or service not known
 "
  env11.ks.kuali.org,"total 16
 drwxr-xr-x 8 root root 4096 Sep 11  2012 jdk1.6.0-u34
@@ -224,9 +224,9 @@ Java(TM) SE Runtime Environment (build 1.6.0_35-b10)
 Java HotSpot(TM) 64-Bit Server VM (build 20.10-b01, mixed mode)
 ","/usr/java/jdk6/bin/java
 "
- env13.ks.kuali.org,"ssh: Could not resolve hostname env13.ks.kuali.org: nodename nor servname provided, or not known
-","ssh: Could not resolve hostname env13.ks.kuali.org: nodename nor servname provided, or not known
-","ssh: Could not resolve hostname env13.ks.kuali.org: nodename nor servname provided, or not known
+ env13.ks.kuali.org,"ssh: Could not resolve hostname env13.ks.kuali.org: Name or service not known
+","ssh: Could not resolve hostname env13.ks.kuali.org: Name or service not known
+","ssh: Could not resolve hostname env13.ks.kuali.org: Name or service not known
 "
  env14.ks.kuali.org,"total 16
 drwxr-xr-x 8 root root 4096 Sep 11  2012 jdk1.6.0-u34
