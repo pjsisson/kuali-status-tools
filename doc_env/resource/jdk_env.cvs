@@ -137,15 +137,9 @@ Java(TM) SE Runtime Environment (build 1.6.0_34-b04)
 Java HotSpot(TM) 64-Bit Server VM (build 20.9-b04, mixed mode)
 ","/usr/java/jdk6/bin/java
 "
- env1.ks.kuali.org,"total 4
-lrwxrwxrwx 1 root root   16 Sep 25  2011 default -> /usr/java/latest
-drwxr-xr-x 9 root root 4096 Sep 25  2011 jdk1.6.0_27
-lrwxrwxrwx 1 root root   21 Sep 25  2011 latest -> /usr/java/jdk1.6.0_27
-lrwxrwxrwx 1 root root 22 Mar 28  2012 /usr/bin/java -> /etc/alternatives/java
-","java version 1.6.0_27
-Java(TM) SE Runtime Environment (build 1.6.0_27-b07)
-Java HotSpot(TM) Client VM (build 20.2-b06, mixed mode, sharing)
-","/usr/java/default/bin/java
+ env1.ks.kuali.org,"ssh: Could not resolve hostname env1.ks.kuali.org: nodename nor servname provided, or not known
+","ssh: Could not resolve hostname env1.ks.kuali.org: nodename nor servname provided, or not known
+","ssh: Could not resolve hostname env1.ks.kuali.org: nodename nor servname provided, or not known
 "
  env2.ks.kuali.org,"total 4
 lrwxrwxrwx 1 root root   16 Sep 25  2011 default -> /usr/java/latest
@@ -157,25 +151,13 @@ Java(TM) SE Runtime Environment (build 1.6.0_27-b07)
 Java HotSpot(TM) Client VM (build 20.2-b06, mixed mode, sharing)
 ","/usr/java/default/bin/java
 "
- env3.ks.kuali.org,"total 4
-lrwxrwxrwx 1 root root   16 Sep 25  2011 default -> /usr/java/latest
-drwxr-xr-x 9 root root 4096 Sep 25  2011 jdk1.6.0_27
-lrwxrwxrwx 1 root root   21 Sep 25  2011 latest -> /usr/java/jdk1.6.0_27
-lrwxrwxrwx 1 root root 22 Mar 28  2012 /usr/bin/java -> /etc/alternatives/java
-","java version 1.6.0_27
-Java(TM) SE Runtime Environment (build 1.6.0_27-b07)
-Java HotSpot(TM) Client VM (build 20.2-b06, mixed mode, sharing)
-","/usr/java/default/bin/java
+ env3.ks.kuali.org,"ssh: Could not resolve hostname env3.ks.kuali.org: nodename nor servname provided, or not known
+","ssh: Could not resolve hostname env3.ks.kuali.org: nodename nor servname provided, or not known
+","ssh: Could not resolve hostname env3.ks.kuali.org: nodename nor servname provided, or not known
 "
- env4.ks.kuali.org,"total 4
-lrwxrwxrwx 1 root root   16 Sep 25  2011 default -> /usr/java/latest
-drwxr-xr-x 9 root root 4096 Sep 25  2011 jdk1.6.0_27
-lrwxrwxrwx 1 root root   21 Sep 25  2011 latest -> /usr/java/jdk1.6.0_27
-lrwxrwxrwx 1 root root 22 Mar 28  2012 /usr/bin/java -> /etc/alternatives/java
-","java version 1.6.0_27
-Java(TM) SE Runtime Environment (build 1.6.0_27-b07)
-Java HotSpot(TM) Client VM (build 20.2-b06, mixed mode, sharing)
-","/usr/java/default/bin/java
+ env4.ks.kuali.org,"ssh: Could not resolve hostname env4.ks.kuali.org: nodename nor servname provided, or not known
+","ssh: Could not resolve hostname env4.ks.kuali.org: nodename nor servname provided, or not known
+","ssh: Could not resolve hostname env4.ks.kuali.org: nodename nor servname provided, or not known
 "
  staging.ks.kuali.org,"total 4
 lrwxrwxrwx 1 root root   16 Sep 25  2011 default -> /usr/java/latest
@@ -187,37 +169,17 @@ Java(TM) SE Runtime Environment (build 1.6.0_27-b07)
 Java HotSpot(TM) Client VM (build 20.2-b06, mixed mode, sharing)
 ","/usr/java/default/bin/java
 "
- env6.ks.kuali.org,"total 4
-lrwxrwxrwx 1 root root   16 Sep 25  2011 default -> /usr/java/latest
-drwxr-xr-x 9 root root 4096 Sep 25  2011 jdk1.6.0_27
-lrwxrwxrwx 1 root root   21 Sep 25  2011 latest -> /usr/java/jdk1.6.0_27
-lrwxrwxrwx 1 root root 22 Sep  5  2012 /usr/bin/java -> /etc/alternatives/java
-","java version 1.6.0_27
-Java(TM) SE Runtime Environment (build 1.6.0_27-b07)
-Java HotSpot(TM) Client VM (build 20.2-b06, mixed mode, sharing)
-","/usr/java/default/bin/java
+ env6.ks.kuali.org,"ssh: Could not resolve hostname env6.ks.kuali.org: nodename nor servname provided, or not known
+","ssh: Could not resolve hostname env6.ks.kuali.org: nodename nor servname provided, or not known
+","ssh: Could not resolve hostname env6.ks.kuali.org: nodename nor servname provided, or not known
 "
- env7.ks.kuali.org,"total 8
-drwxr-xr-x 8 root root 4096 Sep 11  2012 jdk1.6.0-u34
-drwxr-xr-x 8 root root 4096 Aug 10  2012 jdk1.7.0-u06
-lrwxrwxrwx 1 root root   22 Sep 11  2012 jdk6 -> /usr/java/jdk1.6.0-u34
-lrwxrwxrwx 1 root root   22 Sep 11  2012 jdk7 -> /usr/java/jdk1.7.0-u06
-lrwxrwxrwx 1 root root 22 Sep 19 23:04 /usr/bin/java -> /etc/alternatives/java
-","java version 1.6.0_34
-Java(TM) SE Runtime Environment (build 1.6.0_34-b04)
-Java HotSpot(TM) 64-Bit Server VM (build 20.9-b04, mixed mode)
-","/usr/java/jdk6/bin/java
+ env7.ks.kuali.org,"ssh: Could not resolve hostname env7.ks.kuali.org: nodename nor servname provided, or not known
+","ssh: Could not resolve hostname env7.ks.kuali.org: nodename nor servname provided, or not known
+","ssh: Could not resolve hostname env7.ks.kuali.org: nodename nor servname provided, or not known
 "
- env8.ks.kuali.org,"total 8
-drwxr-xr-x 8 root root 4096 Sep 11  2012 jdk1.6.0-u34
-drwxr-xr-x 8 root root 4096 Aug 10  2012 jdk1.7.0-u06
-lrwxrwxrwx 1 root root   22 Sep 11  2012 jdk6 -> /usr/java/jdk1.6.0-u34
-lrwxrwxrwx 1 root root   22 Sep 11  2012 jdk7 -> /usr/java/jdk1.7.0-u06
-lrwxrwxrwx 1 root root 22 Sep 20 19:31 /usr/bin/java -> /etc/alternatives/java
-","java version 1.6.0_34
-Java(TM) SE Runtime Environment (build 1.6.0_34-b04)
-Java HotSpot(TM) 64-Bit Server VM (build 20.9-b04, mixed mode)
-","/usr/java/jdk6/bin/java
+ env8.ks.kuali.org,"ssh: Could not resolve hostname env8.ks.kuali.org: nodename nor servname provided, or not known
+","ssh: Could not resolve hostname env8.ks.kuali.org: nodename nor servname provided, or not known
+","ssh: Could not resolve hostname env8.ks.kuali.org: nodename nor servname provided, or not known
 "
  demo.ks.kuali.org,"total 16
 drwxr-xr-x 8 root root 4096 Sep 11  2012 jdk1.6.0-u34
@@ -232,18 +194,9 @@ Java(TM) SE Runtime Environment (build 1.6.0_35-b10)
 Java HotSpot(TM) 64-Bit Server VM (build 20.10-b01, mixed mode)
 ","/usr/java/jdk6/bin/java
 "
- env10.ks.kuali.org,"total 16
-drwxr-xr-x 8 root root 4096 Sep 11  2012 jdk1.6.0-u34
-drwxr-xr-x 8 root root 4096 Oct  2 22:54 jdk1.6.0-u35
-drwxr-xr-x 8 root root 4096 Aug 10  2012 jdk1.7.0-u06
-drwxr-xr-x 8 root root 4096 Oct  2 22:54 jdk1.7.0-u07
-lrwxrwxrwx 1 root root   22 Oct  2 22:54 jdk6 -> /usr/java/jdk1.6.0-u35
-lrwxrwxrwx 1 root root   22 Oct  2 22:54 jdk7 -> /usr/java/jdk1.7.0-u07
-lrwxrwxrwx 1 root root 22 Oct  2 22:50 /usr/bin/java -> /etc/alternatives/java
-","java version 1.6.0_35
-Java(TM) SE Runtime Environment (build 1.6.0_35-b10)
-Java HotSpot(TM) 64-Bit Server VM (build 20.10-b01, mixed mode)
-","/usr/java/jdk6/bin/java
+ env10.ks.kuali.org,"ssh: Could not resolve hostname env10.ks.kuali.org: nodename nor servname provided, or not known
+","ssh: Could not resolve hostname env10.ks.kuali.org: nodename nor servname provided, or not known
+","ssh: Could not resolve hostname env10.ks.kuali.org: nodename nor servname provided, or not known
 "
  env11.ks.kuali.org,"total 16
 drwxr-xr-x 8 root root 4096 Sep 11  2012 jdk1.6.0-u34
@@ -271,18 +224,9 @@ Java(TM) SE Runtime Environment (build 1.6.0_35-b10)
 Java HotSpot(TM) 64-Bit Server VM (build 20.10-b01, mixed mode)
 ","/usr/java/jdk6/bin/java
 "
- env13.ks.kuali.org,"total 16
-drwxr-xr-x 8 root root 4096 Sep 11  2012 jdk1.6.0-u34
-drwxr-xr-x 8 root root 4096 Jan  8 17:56 jdk1.6.0-u35
-drwxr-xr-x 8 root root 4096 Aug 10  2012 jdk1.7.0-u06
-drwxr-xr-x 8 root root 4096 Jan  8 17:56 jdk1.7.0-u07
-lrwxrwxrwx 1 root root   22 Jan  8 17:56 jdk6 -> /usr/java/jdk1.6.0-u35
-lrwxrwxrwx 1 root root   22 Jan  8 17:56 jdk7 -> /usr/java/jdk1.7.0-u07
-lrwxrwxrwx 1 root root 22 Jan  8 17:51 /usr/bin/java -> /etc/alternatives/java
-","java version 1.6.0_35
-Java(TM) SE Runtime Environment (build 1.6.0_35-b10)
-Java HotSpot(TM) 64-Bit Server VM (build 20.10-b01, mixed mode)
-","/usr/java/jdk6/bin/java
+ env13.ks.kuali.org,"ssh: Could not resolve hostname env13.ks.kuali.org: nodename nor servname provided, or not known
+","ssh: Could not resolve hostname env13.ks.kuali.org: nodename nor servname provided, or not known
+","ssh: Could not resolve hostname env13.ks.kuali.org: nodename nor servname provided, or not known
 "
  env14.ks.kuali.org,"total 16
 drwxr-xr-x 8 root root 4096 Sep 11  2012 jdk1.6.0-u34
@@ -401,7 +345,7 @@ Java(TM) SE Runtime Environment (build 1.6.0_27-b07)
 Java HotSpot(TM) Server VM (build 20.2-b06, mixed mode)
 ","/usr/java/default/bin/java
 "
- ws.rice.kuali.org,": No such file or directory
+ ws.rice.kuali.org,"lrwxrwxrwx 1 root root 36 2012-09-01 02:40 /usr/bin/java -> /var/lib/jenkins/tools/jdk6/bin/java
 total 24
 lrwxrwxrwx 1 jenkins nogroup    9 2012-08-30 02:38 ant -> Ant_1.8.2
 drwxr-xr-x 6 jenkins nogroup 4096 2011-12-10 06:00 Ant_1.8.2
