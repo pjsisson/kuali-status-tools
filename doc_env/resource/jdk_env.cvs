@@ -1,5 +1,5 @@
 ,ls -l /usr/java;ls -l /usr/bin/java;ls -l /var/lib/jenkins/tools,java -version,which java
- env1.rice.kuali.org,"total 4
+add more, env1.rice.kuali.org,"total 4
 lrwxrwxrwx 1 root root   16 Sep 25  2011 default -> /usr/java/latest
 drwxr-xr-x 9 root root 4096 Sep 25  2011 jdk1.6.0_27
 lrwxrwxrwx 1 root root   21 Sep 25  2011 latest -> /usr/java/jdk1.6.0_27
