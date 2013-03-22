@@ -1,7 +1,6 @@
 #!/usr/bin/perl 
 use POSIX qw/strftime/;
 $home=".";
-$html="./resource";
 $delimitor = "|";
 #####Time Logic
   # usage: days_ago n
@@ -23,22 +22,11 @@ $delimitor = "|";
 $date =  strftime('%d-%b-%Y %H:%M',localtime); 
 $arizonaTime = time - ( 86400 * (7/24)   );
 $AZ_Date = strftime('%d-%b-%Y %H:%M',(localtime($arizonaTime))); 
-$kuali_env_wiki = "./kuali_env.txt";
-$rice_env = "$html/rice_env.cvs";
-$ks_env = "$html/ks_env.cvs";
-$ole_env = "$html/ole_env.cvs";
-system("rm $kuali_env_wiki");
-`$home/wikicat.pl > $kuali_env_wiki`;
+$tmp = "/tmp/nightly";
+$resource = "./resource";
+`ssh root\@ci.rice.kuali.org mkdir $tmp`;
+`scp nightly_activity.pl root\@ci.rice.kuali.org:$tmp`;
+`ssh root\@ci.rice.kuali.org \"chmod 755 $tmp/nightly_activity.pl;cd $tmp;./nightly_activity.pl\"`;
+`scp root\@ci.rice.kuali.org:$tmp/*.cvs $resource`;
+`ssh root\@ci.rice.kuali.org \"rm $tmp/nightly_activity.pl;rm $tmp/*.cvs;rmdir $tmp\"`;
 
-`head -1 $kuali_env_wiki > tosstitle.txt`;
-#`grep \"rice.kuali\" $kuali_env_wiki | grep -v "ks.kuali" | grep -v "ole.kuali"  > $rice_env`;
-`grep \"rice.kuali\" $kuali_env_wiki | grep -v "ks.kuali" | grep -v "ole.kuali" | grep -v "ole"  > $rice_env`;
-`cat tosstitle.txt $rice_env >> tosstemp.txt`;
-`mv tosstemp.txt $rice_env`;
-`grep \"ks.kuali\" $kuali_env_wiki > $ks_env`;
-`cat tosstitle.txt $ks_env >> tosstemp.txt`;
-`mv tosstemp.txt $ks_env`;
-`egrep \"ole.kuali|50-16-22-30\" $kuali_env_wiki > $ole_env`;
-`cat tosstitle.txt $ole_env >> tosstemp.txt`;
-`mv tosstemp.txt $ole_env`;
-`rm tosstemp.txt tosstitle.txt`;

@@ -8,7 +8,7 @@ sub main
 {
 $search_pattern = "/var/lib/jenkins/workspace/*/config.xml";
 $config_file_list = "/tmp/config_file_list.txt";
-`ls /var/lib/jenkins/workspace/*/config.xml > $config_file_list`;
+`ssh ubuntu\@ci.rice.kuali.org \"ls /var/lib/jenkins/workspace/*/config.xml\" > $config_file_list`;
 open ( cf,  "<$config_file_list"); (@CF =<cf>); close (cf);
 $index=0;
 foreach $file (@CF)
@@ -18,22 +18,22 @@ foreach $file (@CF)
    $filename = $arrayfile[5];
    $jobname = $arrayfile[5];
    $cmd = "grep \"disabled>true\" $file";
-   @line = `$cmd`;
+   @line = `ssh ubuntu\@ci.rice.kuali.org $cmd`;
    chomp(@line);
    if ( $line[0] ne "" ){ next; }
    if ( $jobname !~ /^$project/  ){ next; }
 
    #print "\njobname: $jobname";
    $jobsearch_start = "/var/lib/jenkins/workspace/$jobname/builds";
-   $status_dir = `ls -tr $jobsearch_start | tail -1`; 
+   $status_dir = `ssh ubuntu\@ci.rice.kuali.org \"ls -tr $jobsearch_start | tail -1\"`; 
    chomp( $status_dir);
    if ( -e "$jobsearch_start/$status_dir/build.xml" )
    {
-   $status = "egrep \"<\/result>\" $jobsearch_start/$status_dir/build.xml";
+   $status = "ssh ubuntu\@ci.rice.kuali.org egrep \"<\/result>\" $jobsearch_start/$status_dir/build.xml";
    chomp( $status);
    }
    $cmd = "grep \"env=$env\" $file";
-      @line = `$cmd`;
+      @line = `ssh ubuntu\@ci.rice.kuali.org $cmd`;
       #print "\n$file: ",@line;
       $found = 0;
       if (( @line > 0))

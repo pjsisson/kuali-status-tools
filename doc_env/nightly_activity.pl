@@ -34,8 +34,8 @@ $datepatternend = strftime('%Y-%m-%d',(localtime($endtime )));
   sub latestTrunk
   {
     my $url = @_[0];
-    $file = "/tmp/file";
-    $getpom="svn cat $url/pom.xml 2>$file |grep -B1 \"<version\" | head -5 |  tail -1";
+    $filetmp = "/tmp/file";
+    $getpom="svn cat $url/pom.xml 2>$filetmp |grep -B1 \"<version\" | head -5 |  tail -1";
     $cmdline = "getpom";
     $cmd = $$cmdline;
     $results = `$cmd`;
@@ -126,7 +126,7 @@ sub main
  }
 }
 
-$home = "/home/ubuntu/scripts/nightly_activity";
+$home = ".";
 $nightly_jenkins_txt = "$home/nightly_jenkins.txt";
 $nightly_jenkins_data = "$home/nightly_jenkins_data.txt";
 $nightly_jenkins_header = "$home/nightly_jenkins_header.txt";
@@ -134,10 +134,11 @@ $nightly_jenkins_sortedtxt = "$home/nightly_jenkins_sorted.txt";
 
 open NT, ">>$nightly_jenkins_sortedtxt" or die "$nightly_jenkins_sortedtxt : $!\n" ;
 $POO = "PoO";
+$PoO = "PoO";
 `rm $POO;touch $POO`;
-$RICEPOO =  $POO."rice.cvs";
-$STUDENTPOO = $POO."student.cvs";
-$OLEPOO = $POO."ole.cvs";
+$RICEPOO =  $PoO."rice.cvs";
+$STUDENTPOO = $PoO."student.cvs";
+$OLEPOO = $PoO."ole.cvs";
 $wiki="/usr/local/tomcat/";
 open POO, ">>$POO" or die "$POO : $!\n" ;
 &main();
@@ -147,11 +148,11 @@ close POO;
 `sort $POO | uniq | grep rice  > $RICEPOO`;
 `sort $POO | uniq | grep student  > $STUDENTPOO`;
 `sort $POO | uniq | grep ole  > $OLEPOO`;
-`cp $RICEPOO $STUDENTPOO $OLEPOO $wiki`; 
+#`cp $RICEPOO $STUDENTPOO $OLEPOO $wiki`; 
 #print "\nsort $nightly_jenkins_sortedtxt > $nightly_jenkins_data";
 `sort $nightly_jenkins_sortedtxt > $nightly_jenkins_data`;
 open HEADER, ">$nightly_jenkins_header" or die "$nightly_jenkins_header : $!\n" ;
 printf HEADER  "%-20s %-40s %-6s %-10s %-40s \n", "log date", "|job", "|duration minutes", "|success","|URL- Label";
 `cat $nightly_jenkins_header $nightly_jenkins_data > $nightly_jenkins_txt`;
 print "$nightly_jenkins_txt";
-system("rm $nightly_jenkins_sortedtxt $nightly_jenkins_data $nightly_jenkins_header");
+system("rm $POO $nightly_jenkins_txt $nightly_jenkins_data $nightly_jenkins_header $nightly_jenkins_sortedtxt");

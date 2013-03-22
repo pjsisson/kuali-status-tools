@@ -198,12 +198,15 @@ sub main
    #print "$i ", "$field ", ">$value\n";
   $i++;
  }
-  $jobcmd = "ssh ubuntu\@ci.rice.kuali.org /home/ubuntu/scripts/doc_env/serverside_searchenvcvs.pl $env_no $project"; 
-  $jobs = `$jobcmd 2>file`;
+  $jobcmd = "ssh ubuntu\@ci.rice.kuali.org /temp/serverside_searchenvcvs.pl  $env_no $project"; 
+  $jobs = `$jobcmd 2>/tmp/file_err.log`;
   $jobs = $jobs.$delimitor;
   printf "%-3s%-12s%-20s%-30s%-20s%-20s%-30s%-20s%-20s%-20s%-20s\n",$env_no.$delimitor,$env1,$date,$bundle_version,$svn_rev,$jdk,$jobs,$svn_tag,$kuali_common,$kuali_common_latest,$shrub; 
 } ## main
 
+`ssh root\@ci.rice.kuali.org rm /tmp/serverside_searchenvcvs.pl`;
+`scp ./serverside_searchenvcvs.pl root\@ci.rice.kuali.org:/tmp/serverside_searchenvcvs.pl`;
+`ssh root\@ci.rice.kuali.org chmod 755 /tmp/serverside_searchenvcvs.pl`;
 $env1_rice="ssh root\@env1.rice.kuali.org  cat /usr/local/tomcat/webapps/ROOT/META-INF/MANIFEST.MF";
 $env2_rice="ssh root\@env2.rice.kuali.org  cat /usr/local/tomcat/webapps/ROOT/META-INF/MANIFEST.MF";
 $env3_rice="ssh root\@env3.rice.kuali.org  cat /usr/local/tomcat/webapps/ROOT/META-INF/MANIFEST.MF";
